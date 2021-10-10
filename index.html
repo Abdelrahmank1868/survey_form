@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+
+<style>
+body {
+  font-family: sans-serif;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+label {
+  font-size: 18px;
+  display: block;
+  padding-bottom: 10px;
+}
+input, textarea, select {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+form {
+  background-color: #CC0000;
+padding: 40px 40px 40px 40px;
+}
+
+input{type=checkbox}:not{old} + label
+input{type=radio}:not{old} + label
+{display: inline-block;
+margin-left: -28px;
+padding-left: 28px;
+}
+  </style>
+</head>
+
+<body>
+<h1 id="title">Tell Me About Games</h1>
+
+<p id="description">
+This is a survey where you can tell us about the game you enjoy.
+</p>
+<form id="survey-form">
+<label id="name-label">Name:</label>
+<input type="text" name="name" id="name" required placeholder="First Name"><br>
+
+<label id="email-label">Email:</label>
+<input type="email" name="email" id="email" required placeholder="Best Email"><br>
+
+<label id="number-label">Number:</label>
+<input type="number" name="number" id="number" min="0" max="10" required placeholder="#"><br>
+
+<label id="type-of-game">Select game:</label>
+<select id="dropdown" id="RPG">
+  <option value="genshin">Genshin</option>
+  <option value="honkai">Honkai</option>
+  <option value="neverwinter">Neverwinter</option>
+  <option value="other">Other</option>
+</select>
+
+<label id="additional-comments-label">Additonal Comments:</label>
+<textarea placeholder="Additional Comments"></textarea><br>
+
+<br>
+<label id="gender-label">Gender:</label>
+<input type="radio" name="gender" value="male"> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other
+<br>
+<label id="transportation-type-label">Transport Type:</label>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">I have a bike<br>
+<input type="checkbox" id="vehicle2" name="vehicle1" value="Car">I have a car<br>
+<input type="checkbox" id="vehicle3" name="vehicle1" value="Boat">I have a boat<br>
+
+
+<input type="submit" id="submit">
+  </form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
